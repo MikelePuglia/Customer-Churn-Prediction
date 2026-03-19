@@ -1,0 +1,6 @@
+R >= 4.5.3
+
+Packages: ggplot2, dplyr, caret, ROCR, pROC, ggeffects, MASS, car, corrplot
+
+Install missing packages in R:
+install.packages(c("ggplot2","dplyr","caret","ROCR","pROC","ggeffects","MASS","car","corrplot"))

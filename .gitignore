@@ -1,0 +1,20 @@
+# R specific
+.Rhistory
+.RData
+.Rproj.user
+.Rhistory
+.Ruserdata
+
+# RStudio project files
+*.Rproj
+
+# Logs and temporary files
+*.log
+*.tmp
+*.out
+
+# Data
+data/*.csv   # ignora CSV sensibili se vuoi tenerli solo in locale
+
+# Outputs
+outputs/

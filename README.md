@@ -15,7 +15,7 @@ The goal of this project is to predict whether a customer will leave the service
 
 The project is organized into separate R modules following a clear pipeline:
 
-```
+---
 Customer-Churn-Prediction/
 │
 ├── 01_load_data.R        # Load dataset
@@ -91,7 +91,6 @@ The main model is a logistic regression:
 
 1. Clone the repository:
 
-```bash
 git clone https://github.com/MikelePuglia/Customer-Churn-Prediction.git
 cd Customer-Churn-Prediction
 ---

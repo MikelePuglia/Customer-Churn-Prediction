@@ -1,5 +1,8 @@
 # 📊 Customer Churn Prediction (R Project)
 
+
+![image](https://github.com/user-attachments/assets/7d166c60-e7e3-4246-99ad-0fa32ce67efa)
+
 Progetto di Machine Learning in **R** per la previsione del churn dei clienti (abbandono), sviluppato con una pipeline modulare che include caricamento dati, preprocessing, analisi esplorativa, modellazione e valutazione.
 
 ---

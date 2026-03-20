@@ -3,61 +3,59 @@
 
 ![image](https://github.com/user-attachments/assets/7d166c60-e7e3-4246-99ad-0fa32ce67efa)
 
-Progetto di Machine Learning in **R** per la previsione del churn dei clienti (abbandono), sviluppato con una pipeline modulare che include caricamento dati, preprocessing, analisi esplorativa, modellazione e valutazione.
-
+This is an R-based Machine Learning project for predicting customer churn. It is implemented as a modular pipeline including data loading, preprocessing, exploratory analysis, modeling, and evaluation.
 ---
 
-## 🚀 Obiettivo
+## 🚀 Objective
 
-L’obiettivo è prevedere se un cliente abbandonerà il servizio (**churn**) utilizzando un modello statistico interpretabile, utile per strategie di retention.
-
+The goal of this project is to predict whether a customer will leave the service (churn) using an interpretable statistical model, which can help companies take proactive retention actions.
 ---
 
-## 📁 Struttura del progetto
+## 📁 Project Structure
 
-Il progetto è organizzato in moduli R separati, seguendo una pipeline chiara:
+The project is organized into separate R modules following a clear pipeline:
 
 ```
 Customer-Churn-Prediction/
 │
-├── 01_load_data.R        # Caricamento dataset
-├── 02_preprocessing.R   # Pulizia e trasformazioni
-├── 03_eda.R             # Analisi esplorativa (EDA)
-├── 04_model_glm.R       # Modello GLM (logistic regression)
-├── 05_evaluation.R      # Valutazione modello
-├── main.R               # Pipeline completa
+├── 01_load_data.R        # Load dataset
+├── 02_preprocessing.R    # Data cleaning and transformations
+├── 03_eda.R              # Exploratory Data Analysis (EDA)
+├── 04_model_glm.R        # GLM model (logistic regression)
+├── 05_evaluation.R       # Model evaluation
+├── main.R                # Complete pipeline
 └── README.md
-```
+
 
 ---
 
-## ⚙️ Pipeline del progetto
+## ⚙️ Project Pipeline
 
-Il workflow è completamente modulare:
+The workflow is fully modular:
 
 ### 1. Data Loading
 
-* Caricamento dataset da CSV
-* Controllo esistenza file
-* Output informativo (dimensioni, NA, summary)
+* Load dataset from CSV
+* Check if the file exists
+* Print dataset info (dimensions, NAs, summary)
 
 ### 2. Data Preprocessing
 
-* Rimozione valori mancanti (`na.omit`)
-* Conversione variabili categoriche in **factor**
-* Utilizzo di `dplyr` per trasformazioni
+* Remove missing values (`na.omit`)
+* Convert categorical variables to **factors**
+* Use `dplyr` for transformations
 
 ### 3. Exploratory Data Analysis (EDA)
 
-* Statistiche descrittive
-* Distribuzione della variabile target (**churn**)
-* Matrice di correlazione (variabili numeriche)
-* Visualizzazione con `ggplot2`
+* Summary statistics
+* Target variable (**churn**) distribution
+* Correlation matrix (numeric variables)
+* Visualization with `ggplot2`
 
 ### 4. Model Training
 
-* Modello: **Generalized Linear Model (GLM)**
-* Tipo: **Logistic Regression**
+* Model: **Generalized Linear Model (GLM)**
+* Type: **Logistic Regression**
 * Link function: `logit`
 
 ### 5. Model Evaluation
@@ -69,17 +67,17 @@ Il workflow è completamente modulare:
 
 ---
 
-## 🧠 Modello utilizzato
+## 🧠 Model Details
 
-Il modello principale è una regressione logistica:
+The main model is a logistic regression:
 
-* Implementata con `glm()`
-* Famiglia: `binomial`
-* Output: probabilità di churn
+* Implemented with `glm()`
+* Family: `binomial`
+* Output: churn probability
 
 ---
 
-## 🛠️ Tecnologie e librerie
+## 🛠️ Technologies & Libraries
 
 * R
 * dplyr
@@ -89,50 +87,15 @@ Il modello principale è una regressione logistica:
 
 ---
 
-## ▶️ Come eseguire il progetto
+## ▶️ How to Run the Project
 
-1. Clona la repository:
+1. Clone the repository:
 
 ```bash
 git clone https://github.com/MikelePuglia/Customer-Churn-Prediction.git
 cd Customer-Churn-Prediction
-```
-
-2. Apri R o RStudio
-
-3. Installa le librerie necessarie:
-
-```r
-install.packages(c("dplyr", "ggplot2", "corrplot", "pROC"))
-```
-
-4. Modifica il path del dataset in `main.R`:
-
-```r
-df <- load_data("path/to/your/dataset.csv")
-```
-
-5. Esegui la pipeline:
-
-```r
-source("main.R")
-```
-
 ---
 
-## 📊 Output del progetto
-
-Il progetto produce:
-
-* Statistiche descrittive
-* Grafici EDA
-* Modello GLM addestrato
-* Confusion matrix
-* Accuracy
-* ROC curve + AUC
-
----
-
-## 👤 Autore
+## 👤 Author
 
 **Michele Puglia**

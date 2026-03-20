@@ -14,4 +14,4 @@
 *.out
 
 # Data
-data/*.csv   # ignora CSV sensibili se vuoi tenerli solo in locale
+data/*.csv 

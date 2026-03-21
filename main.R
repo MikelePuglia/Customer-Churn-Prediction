@@ -1,11 +1,11 @@
 # main.R
-source("00_libraries.R")
-source("01_load_data.R")
-source("02_eda.R")
-source("03_split_data.R")
-source("04_models.R")
-source("05_predictions.R")
-source("06_validation.R")
+source("R/00_libraries.R")
+source("R/01_load_data.R")
+source("R/02_eda.R")
+source("R/03_split_data.R")
+source("R/04_models.R")
+source("R/05_predictions.R")
+source("R/06_validation.R")
 
 # --------------------------------------------
 # Salvataggio dataset per Tableau

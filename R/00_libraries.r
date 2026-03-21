@@ -1,0 +1,11 @@
+# Caricamento librerie
+library(ggplot2)
+library(dplyr)
+library(corrplot)
+library(gridExtra)
+library(caret)
+library(car)
+library(ROCR)
+library(pROC)
+library(ggeffects)
+library(MASS)

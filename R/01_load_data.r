@@ -1,5 +1,5 @@
 # Lettura dataset
-bank <- read.csv("C:/Users/pugli/OneDrive/Desktop/Customer_Churn_Prediction/Bank Customer Churn Prediction.csv", header = TRUE)
+bank <- read.csv(path, header = TRUE)
 
 # Conversione di tipo
 bank <- bank %>%

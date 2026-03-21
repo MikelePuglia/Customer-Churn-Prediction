@@ -40,6 +40,17 @@ plot_churn_distribution(df_clean)
 # --------------------------------------------
 glm_model <- train_glm(df_clean)
 
+#Add prediction to dataframe
+df_clean$predicted_churn <- predict(glm_model, df_clean, type="response")
+
+#Saving df
+write.table(df_clean,
+            "churn_for_tableau.csv",
+            sep = ",",       
+            dec = ".",       
+            row.names = FALSE,
+            quote = FALSE)  
+
 # --------------------------------------------
 # 6. Evaluate model
 # --------------------------------------------
